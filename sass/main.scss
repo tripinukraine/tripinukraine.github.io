@@ -1,0 +1,218 @@
+@import 'normalize';
+@import 'fonts';
+@import 'colorpalette';
+@import 'grid';
+@import 'buttons';
+
+
+html,
+body,
+#map {
+	color: $text-color;
+	height: 90.9vh;
+	font-family: 'Azoft sans';
+	// width: 100vw;
+}
+
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	
+}
+
+a:hover {
+	color: $link-hover;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.site-header,
+.site-footer {
+	background: $base-color;
+	position: relative;
+}
+
+.site-footer {
+	clear: both;
+}
+
+.logo{
+  float: left;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+/* Main menu in header */
+nav {
+	float: left;
+	button {
+		float: left;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-left: 5em;
+	}
+}
+
+.show-on-map {
+	display: none;
+	// background: rgba(233, 227, 202, .0); // Делаем фон прозрачным. Выделяем содержание шрифтами и т.д!
+  background: #FFFFC7;
+	border: 0.13em solid #2574A9; /* border-color */
+	border-radius: 4px;
+	box-shadow: 10px 10px 20px #BFBFA3;
+	color: $text-color;
+	/* Positioning */
+	position: absolute;
+	margin-left: 5em; /* Используем свойство "margin" для определения положения блока */
+	margin-top: 0.8em;
+	z-index: 1000;
+	h4 {
+		margin: 1em 1em;
+	}
+	span {
+		position: absolute;
+		top: 1em;
+		right: 1em;
+		cursor: pointer;
+		color: #2574A9;
+		font-size: 0.7em;
+		border-bottom: 0.1em dotted #2574A9;
+	}
+	span:hover {
+		color: $visited-color;
+		border-bottom-color: $visited-color;
+	}
+	li {
+		float: left;
+		padding: 1em 1em;
+	}
+}
+
+/* Top arrow for ".show-on-map" */
+.show-on-map::before {
+  content: "";
+  position: absolute;
+  border-left: 1em solid rgba(37, 116, 169, 0); /* rgba border-color */
+  border-right: 1em solid rgba(37, 116, 169, 0); /* rgba border-color */
+  border-bottom: 1em solid #2574A9; /* border-color */
+  left: 10em;
+  top: -1em;
+}
+
+.show-on-map::after {
+	content: "";
+  position: absolute;
+  border-left: 1em solid rgba(255, 255, 199, 0); /* rgba background-color */
+  border-right: 1em solid rgba(255, 255, 199, 0); /* rgba background-color */
+  border-bottom: 1em solid #FFFFC7; /* background-color */
+  left: 10em;
+  top: -0.8em;
+}
+
+.our-route {
+	display: none;
+	background: #FFFFC7;
+	border: 0.13em solid #2574A9; /* border-color */
+	border-radius: 4px;
+	box-shadow: 10px 10px 20px #BFBFA3;
+	color: $text-color;
+	/* Positioning */
+	position: absolute;
+	margin-left: 15em; /* Используем свойство "margin" для определения положения блока */
+	margin-top: 0.8em;
+	z-index: 1000;
+	h4 {
+		margin: 1em 1em;
+	}
+	span {
+		position: absolute;
+		top: 1em;
+		right: 1em;
+		cursor: pointer;
+		color: #2574A9;
+		font-size: 0.7em;
+		border-bottom: 0.1em dotted #2574A9;
+	}
+	span:hover {
+		color: $visited-color;
+		border-bottom-color: $visited-color;
+	}
+	div {
+		float: left;
+		margin: 1em 1em 1em 1em;
+	}
+	button {
+		cursor: pointer;
+		float: left;
+		margin: 1em 1em 1em 1em;
+	}
+	button:last-child {
+		float: right;
+	}
+}
+
+/* Top arrow for ".our-route" */
+.our-route::before {
+  content: "";
+  position: absolute;
+  border-left: 1em solid rgba(37, 116, 169, 0); /* rgba border-color */
+  border-right: 1em solid rgba(37, 116, 169, 0); /* rgba border-color */
+  border-bottom: 1em solid #2574A9; /* border-color */
+  left: 25em;
+  top: -1em;
+}
+
+.our-route::after {
+	content: "";
+  position: absolute;
+  border-left: 1em solid rgba(255, 255, 199, 0); /* rgba background-color */
+  border-right: 1em solid rgba(255, 255, 199, 0); /* rgba background-color */
+  border-bottom: 1em solid #FFFFC7; /* background-color */
+  left: 25em;
+  top: -0.8em;
+}
+
+.sidebar {
+	background: #E9E3CA;
+	display: none;
+	height: 90.9vh;
+	span {
+		position: absolute;
+		top: 5em;
+		right: 1em;
+		cursor: pointer;
+		color: #2574A9;
+		font-size: 0.7em;
+		border-bottom: 0.1em dotted #2574A9;
+	}
+	span:hover {
+		color: $visited-color;
+		border-bottom-color: $visited-color;
+	}
+	p, li {
+		padding: .5em .5em .5em 2em;
+	}
+}
+
+// #map {
+// 	height: 300px;
+// }
+

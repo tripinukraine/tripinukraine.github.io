@@ -1,0 +1,25 @@
+// Buttons for "Trip In Ukraine" project
+
+@import 'colorpalette';
+@import 'fonts';
+
+.button {
+	background: $base-color;
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+	padding-top: 0.3em;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+}
+
+.header-button {
+	border-bottom: 0.3em solid $base-color;
+	margin-bottom: 0;
+}
+
+.header-button:hover,
+.header-button:active,
+.header-button:focus {
+	border-bottom: 0.3em solid #000060;
+}

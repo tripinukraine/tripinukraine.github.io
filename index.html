@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=devise-width, initial-scale=1.0">
+	<title>Макет</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/leaflet.css"> -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<!-- <script type="text/javascript" src="js/leaflet.js"></script> -->
+	<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+	
+</head>
+<body>
+
+	<!-- Header section -->
+	<header class="site-header">
+
+		<div class="wrap">
+			<div class="logo"><a href="index.html">Logo</a></div>
+			<nav>
+				
+				<button type="button" class="button header-button show-on" title="Show on map">Что ты хочешь увидеть на карте?</button>
+				<button type="button" class="button header-button make-route" title="Go!">Поехали уже, наконец!</button>
+				
+			</nav>
+		</div>
+
+		<!-- What do you want see on map pop-up -->
+		<div class="horizontal-popup show-on-map">
+			<h4>ПОКАЗАТЬ НА КАРТЕ:</h4>
+			<span>Скрыть</span>
+
+			<ul>
+				<li><input type="checkbox" name="checkbox">Ништяки!</li>
+				<li><input type="checkbox" name="checkbox">Где пожрать?</li>
+				<li><input type="checkbox" name="checkbox">Где поспать?</li>
+				<li><input type="checkbox" name="checkbox">Где заправить тачку?</li>
+			</ul>
+		</div>
+
+		<!-- Our route section -->
+	<div class="horizontal-pop-up our-route">
+		<h4>ИТАК, ПОЕХАЛИ!</h4>
+		<span>Скрыть</span>
+
+		<form action="#" method="post">
+
+			<div>
+				<label for="wherefrom">Откуда?</label>
+				<input type="text" name="wherefrom" id="wherefrom" value="" tabindex="1" />
+			</div>
+		
+		  <div>
+				<label for="where">Куда?</label>
+				<input type="text" name="where" id="where" value="" tabindex="1" />
+			</div>
+      
+		</form>
+
+    <button type="button" class="button">Добавить в маршрут</button>
+    <button type="button" class="button route-details">Показать детали маршрута</button>	
+		<button type="button" class="button">ПОЕХАЛИ!</button>
+
+	</div>
+		
+	</header>
+
+
+	<!-- Aside section -->
+	<aside class="sidebar" id="sidebar">
+		<span>Скрыть</span>
+		<p>Блок, в котором располагается детальная информация в зависимости от выбранного контекста. Например: 
+			<ul>
+				<li>обзор маршрута</li>
+				<li>Описание точки, которую выбрали на карте</li>
+				<li>Всякая подробная информация, короче...</li>
+				<li>Шось таке</li>
+			</ul>
+		</p>
+	</aside>
+	
+	
+
+	<!-- Map section -->
+	<div id="map"></div>
+
+	<!-- Footer section -->
+	<footer class="site-footer">
+		<div class="wrap">
+			&copy 2016 Our super team
+		</div>
+	</footer>
+
+	<!-- Javascript here -->
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/setmap.js"></script>
+
+</body>
+</html>

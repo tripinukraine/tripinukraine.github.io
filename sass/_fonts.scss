@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Font styles for "Trip In Ukraine" project
+   ========================================================================== */
+   
+/*
+ * Ссылка на шрифт и разработчика
+ * 
+ * http://www.1001fonts.com/azoft-sans-font.html
+ * http://www.4thfebruary.com.ua/
+ */
+
+@font-face {
+	font-family: 'Azoft sans';
+	src: url(../fonts/azoft-sans-regular.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Azoft sans';
+	src: url(../fonts/azoft-sans-bold.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Azoft sans';
+	src: url(../fonts/azoft-sans-italic.woff) format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Azoft sans';
+	src: url(../fonts/azoft-sans-bold-italic.woff) format('woff');
+	font-weight: bold;
+	font-style: italic;
+}

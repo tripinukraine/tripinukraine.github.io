@@ -1,0 +1,240 @@
+/* Colors used in project
+   ========================================================================== */
+
+/*
+ * Сюда добавить все используемые цвета в проекте
+ * с назначением и значением
+ *
+ * base-color: #bla-bla-bla etc.
+ * link-color:
+ * hover-color:
+ * visited-color:
+ * text-color:
+ * success-color:
+ * fail-color:
+ * warning-color:
+ * notice-color:
+ * help-popup-color:
+ * users-interface-blocks-colors: указать несколько возможных цветов для разных блоков
+ * 
+ * 
+ */
+ 
+ figcaption {
+ 	font-size: 18px;
+ 	padding-top: 5px;
+ }
+
+ a:link {
+ 	border-bottom: 1px dotted;
+ 	// color: #ff6600;
+ 	// color: #000080;
+ 	color: #000033;
+ 	text-decoration: none;
+ 	font-size: 12px;
+ }
+
+ // a:visited {
+ // 	// color: #001B2F;
+ // 	color: #447397;
+ // }
+
+ a:hover {
+ 	// color: #e8440C;
+ 	color: #262699;
+ }
+
+ 
+ 
+h5 {
+	border-left: 7px solid;
+	padding-left: 3px;
+	margin-left: 10px;
+}
+
+h5.base {
+	border-color: #ffcc00;
+}
+
+h5.link {
+	border-color: #ff6600;
+}
+
+ div {
+ 	width: 200px;
+ 	height: 50px;
+ 	// border: 1px solid #000;
+ }
+
+ /* Базовые стили слоя затемнения и модального окна  */
+
+ .overlay {
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	z-index: 10;
+ 	display: none;
+ 	cursor: default;
+ 	background-color: rgba(0, 0, 0, 0.65);
+ }
+
+ /* активируем слой затемнения */
+
+ .overlay:target {
+ 	display: block;
+ }
+
+ /* стили модального окна */
+
+ .popup {
+ 	position: fixed;
+ 	top: -100%;
+ 	right: 0;
+ 	left: 50%;
+ 	width: 80%;
+ 	min-width: 320px;
+ 	max-width: 600px;
+ 	height: auto;
+ 	background: #e8e8c5;
+ 	border: 1px solid #000;
+ 	z-index: 20;
+ 	margin: 0;
+ }
+
+ /* активируем модальный блок */
+
+ .overlay:target+.popup {
+ 	-webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 20%;
+ }
+
+ /* формируем кнопку закрытия */
+
+ .close {
+ 	background-color: #ccc;
+ 	top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    padding: 0;
+    border: 1px solid #000;
+    text-align: center;
+    text-decoration: none;
+    font: 13px/20px 'Tahoma', Arial, sans-serif;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+ }
+
+ .close:before {
+    color: #000;
+    content: "X";
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+ }
+
+ /* Стили для элементов внутри всплывающих окон */
+
+ .example-container {
+ 	background: #fff;
+ 	border: 1px solid #000;
+ 	width: auto;
+ 	height: auto;
+ 	margin: 20px 20px 20px 20px;
+ }
+
+ .example-container div {
+ 	width: 33%;
+ }
+
+ .example-container span {
+ 	font-size: 12px;
+ 	padding: 5px 10px;
+ }
+
+ .inline {
+ 	display: inline-block;
+ }
+
+ .example-container
+ .text-color,
+ .link-color
+ span {
+ 	color: #fff;
+ } 
+
+ .header, .footer {
+ 	border: none;
+ 	width: 558px;
+ }
+
+ .footer {
+ 	height: 20px;
+ 	clear: both;
+ 	margin-top: 0;
+ }
+
+
+
+ .base-color {
+ 	background: #ffcc00;
+ }
+
+ .link-color {
+ 	// background: #ff6600;
+ 	// background: #000080;
+ 	background: #000033;
+ }
+
+ .link-hover {
+ 	background: #262699; 
+ }
+
+ .link-visited {
+ 	// background: #001B2F; 
+ 	background: #447397;
+ }
+
+ .hover-color {
+ 	background: #ffbb00;
+ }
+
+ .visited-color {
+ 	background: #cc5200;
+ }
+
+ .text-color {
+ 	background: #110000;
+ }
+
+ .success-color {
+ 	background: #30C030;
+ }
+
+ .fail-color {
+ 	background: #FF2300;
+ }
+
+ .warning-color {
+ 	background: #FFF700;
+ }
+
+ .notice-color {
+ 	background: #ffdd88;
+ }
+
+ .help-popup-color {
+ 	background: #65E080;
+ }
+
+ .users-interface-blocks {
+ 	background: #FFA200;
+ }

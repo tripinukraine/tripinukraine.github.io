@@ -1,0 +1,149 @@
+/* ==========================================================================
+   Base styles for "Trip In Ukraine" project
+   ========================================================================== */
+
+/* ==========================================================================
+   Definition fonts and colours
+   ========================================================================== */
+
+
+/* Connection fonts
+   ========================================================================== */
+
+/*
+ * Ссылка на шрифт и разработчика
+ * 
+ * http://www.1001fonts.com/azoft-sans-font.html
+ * http://www.4thfebruary.com.ua/
+ */
+
+@font-face {
+	font-family: 'Azoft sans';
+	src: url(../fonts/azoft-sans-regular.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Azoft sans';
+	src: url(../fonts/azoft-sans-bold.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Azoft sans';
+	src: url(../fonts/azoft-sans-italic.woff) format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Azoft sans';
+	src: url(../fonts/azoft-sans-bold-italic.woff) format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+
+
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+/*
+ * HTML для примера:
+ * 
+ * <div class="grid">
+ *   <div class="column column-4"></div>
+ *   <div class="column column-4"></div>
+ * </div>
+ */
+
+.grid {
+	width: 100%;
+}
+
+.column {
+	box-sizing: border-box;
+}
+
+
+/* Размеры колонок
+   ========================================================================== */
+
+.column-8 { 
+	width: 100%; 
+}
+.column-7 { 
+	width: 87.5%; 
+}
+.column-6 { 
+	width: 75%; 
+}
+.column-5 { 
+	width: 62.5%; 
+}
+.column-4 { 
+	width: 50%; 
+}
+.column-3 { 
+	width: 37.5%; 
+}
+.column-2 { 
+	width: 25%; 
+}
+.column-1 { 
+	width: 12.5%; 
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Azoft sans';
+	color: #110000;
+}
+
+a {
+	color: #000033;
+	font-size: 20px;
+	text-decoration: none;
+	border-bottom: 1px dotted; 
+}
+
+header {
+	background: #fdd000;
+	height: 50px;
+}
+
+aside {
+	background: green;
+	height: 300px;
+	float: right;
+}
+
+aside .dev {
+	background: red;
+	display: inline-block;
+	height: 200px;
+	vertical-align: top;
+}
+
+aside .dev-2 {
+	background: gray;
+	display: inline-block;
+	height: 150px;
+	padding: 1% 5%;
+}
+
+aside .dev-2-2 {
+	background: orange;
+	display: inline-block;
+	height: 150px;
+	border: 1px solid black;
+}
+
+.our-route {
+	background: orange;
+	display: none;
+}

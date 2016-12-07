@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Grid of Trip In Ukraine
+   ========================================================================== */
+
+/**
+ *  Using susy css-library.
+ *  http://susy.oddbird.net/
+ */
+
+@import 'susy';
+@import 'breakpoint';
+
+$susy: (
+	columns: 16,
+	container: 100%,
+	global-box-sizing: border-box,
+	
+);
+
+/* Set box-sizing property
+   ========================================================================== */
+
+@include border-box-sizing;
+
+//Clearfix
+@mixin clearfix {
+	&:after {
+		content: " ";
+		display: block;
+		clear: both;
+	}
+}
+
+/* Wrapper */
+
+.wrap {
+	@include container();
+	@include clearfix;
+	// height: 100vh;
+}
+
+/* Blocks
+   ========================================================================== */
+
+/**
+ * Use "horizontal-popup" class for all horizontal blocks pop-up.
+ */
+
+.horizontal-popup {
+	@include span(9 of 16);
+	@include clearfix;
+}
+
+/* Right-sidebar */
+
+.sidebar {
+	@include span(5 of 16 last);
+	@include clearfix;
+	// margin-right: gutter(37);
+}

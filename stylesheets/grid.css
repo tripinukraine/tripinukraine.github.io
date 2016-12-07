@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+/*
+ *  Using floats on grid.  
+ * 
+ */
+
+/* Set box-sizing property
+   ========================================================================== */
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* Grid container
+   ========================================================================== */
+
+/*
+ * The ".l" - prefix stands for layout. 
+ *
+ * Code example:
+ * 
+ * #article {
+ *  width: 80%;
+ *  float: left;
+ * }
+ *
+ * #sidebar {
+ *  width: 20%;
+ *  float: right;
+ * }
+ *
+ * .l-fixed #article {
+ *  width: 600px;
+ * }
+ *
+ * .l-fixed #sidebar {
+ *  width: 200px;
+ * }
+ * 
+ * https://smacss.com/book/type-layout
+ */
+
+.l-wrapper {
+ 	width: 100%;
+ 	margin-right: auto;
+ 	margin-left: auto;
+}
+
+ /* Grid-item
+    ========================================================================== */
+
+/* Clearfix */
+
+.three-col-grid:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.three-col-grid {
+	background: gray; // вспомогательный фон. Убрать в конце разработки
+}
+
+.three-col-grid .grid-item {
+	width: 33.33333%;
+	float: left;
+	border: 1px solid #000;
+	height: 200px;
+}
+
+/* Gutters
+   ========================================================================== */
+
+.grid-item {
+  width: calc((100% - 20px * 2) / 3);
+  margin-top: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.grid-item:last-child {
+	float: right;
+	margin-right: 0;
+}

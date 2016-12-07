@@ -1,0 +1,869 @@
+@charset "UTF-8";
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+/* line 13, ../sass/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 27, ../sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 35, ../sass/_normalize.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 49, ../sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 62, ../sass/_normalize.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 72, ../sass/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 81, ../sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 92, ../sass/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 105, ../sass/_normalize.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 115, ../sass/_normalize.scss */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 125, ../sass/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 135, ../sass/_normalize.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 144, ../sass/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 154, ../sass/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 165, ../sass/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 173, ../sass/_normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 182, ../sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 191, ../sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 199, ../sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 203, ../sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 214, ../sass/_normalize.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 223, ../sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 232, ../sass/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 240, ../sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 252, ../sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 268, ../sass/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 278, ../sass/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 289, ../sass/_normalize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 300, ../sass/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 312, ../sass/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 323, ../sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 336, ../sass/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 350, ../sass/_normalize.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 359, ../sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 368, ../sass/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 378, ../sass/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 388, ../sass/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/* line 397, ../sass/_normalize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 407, ../sass/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 420, ../sass/_normalize.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 429, ../sass/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 440, ../sass/_normalize.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 448, ../sass/_normalize.scss */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 459, ../sass/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Font styles for "Trip In Ukraine" project
+   ========================================================================== */
+/*
+ * Ссылка на шрифт и разработчика
+ * 
+ * http://www.1001fonts.com/azoft-sans-font.html
+ * http://www.4thfebruary.com.ua/
+ */
+@font-face {
+  font-family: 'Azoft sans';
+  src: url(../fonts/azoft-sans-regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Azoft sans';
+  src: url(../fonts/azoft-sans-bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Azoft sans';
+  src: url(../fonts/azoft-sans-italic.woff) format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Azoft sans';
+  src: url(../fonts/azoft-sans-bold-italic.woff) format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+/* ==========================================================================
+   Grid of Trip In Ukraine
+   ========================================================================== */
+/**
+ *  Using susy css-library.
+ *  http://susy.oddbird.net/
+ */
+/* Set box-sizing property
+   ========================================================================== */
+/* line 21, ../../../../../var/lib/gems/2.2.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Wrapper */
+/* line 36, ../sass/_grid.scss */
+.wrap {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../var/lib/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 27, ../sass/_grid.scss */
+.wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* Blocks
+   ========================================================================== */
+/**
+ * Use "horizontal-popup" class for all horizontal blocks pop-up.
+ */
+/* line 49, ../sass/_grid.scss */
+.horizontal-popup {
+  width: 55.6962%;
+  float: left;
+  margin-right: 1.26582%;
+}
+/* line 27, ../sass/_grid.scss */
+.horizontal-popup:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* Right-sidebar */
+/* line 56, ../sass/_grid.scss */
+.sidebar {
+  width: 30.37975%;
+  float: right;
+  margin-right: 0;
+}
+/* line 27, ../sass/_grid.scss */
+.sidebar:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 6, ../sass/_buttons.scss */
+.button {
+  background: #ffcc00;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  padding-top: 0.3em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+/* line 16, ../sass/_buttons.scss */
+.header-button {
+  border-bottom: 0.3em solid #ffcc00;
+  margin-bottom: 0;
+}
+
+/* line 21, ../sass/_buttons.scss */
+.header-button:hover,
+.header-button:active,
+.header-button:focus {
+  border-bottom: 0.3em solid #000060;
+}
+
+/* line 8, ../sass/main.scss */
+html,
+body,
+#map {
+  color: #110000;
+  height: 90.9vh;
+  font-family: 'Azoft sans';
+}
+
+/* line 17, ../sass/main.scss */
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 23, ../sass/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 28, ../sass/main.scss */
+a {
+  color: #000033;
+  text-decoration: none;
+}
+
+/* line 34, ../sass/main.scss */
+a:hover {
+  color: #262699;
+}
+
+/* line 38, ../sass/main.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 43, ../sass/main.scss */
+li {
+  list-style: none;
+}
+
+/* line 47, ../sass/main.scss */
+.site-header,
+.site-footer {
+  background: #ffcc00;
+  position: relative;
+}
+
+/* line 53, ../sass/main.scss */
+.site-footer {
+  clear: both;
+}
+
+/* line 57, ../sass/main.scss */
+.logo {
+  float: left;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+/* Main menu in header */
+/* line 64, ../sass/main.scss */
+nav {
+  float: left;
+}
+/* line 66, ../sass/main.scss */
+nav button {
+  float: left;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 5em;
+}
+
+/* line 74, ../sass/main.scss */
+.show-on-map {
+  display: none;
+  background: #FFFFC7;
+  border: 0.13em solid #2574A9;
+  /* border-color */
+  border-radius: 4px;
+  box-shadow: 10px 10px 20px #BFBFA3;
+  color: #110000;
+  /* Positioning */
+  position: absolute;
+  margin-left: 5em;
+  /* Используем свойство "margin" для определения положения блока */
+  margin-top: 0.8em;
+  z-index: 1000;
+}
+/* line 87, ../sass/main.scss */
+.show-on-map h4 {
+  margin: 1em 1em;
+}
+/* line 90, ../sass/main.scss */
+.show-on-map span {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+  color: #2574A9;
+  font-size: 0.7em;
+  border-bottom: 0.1em dotted #2574A9;
+}
+/* line 99, ../sass/main.scss */
+.show-on-map span:hover {
+  color: #cc5200;
+  border-bottom-color: #cc5200;
+}
+/* line 103, ../sass/main.scss */
+.show-on-map li {
+  float: left;
+  padding: 1em 1em;
+}
+
+/* Top arrow for ".show-on-map" */
+/* line 110, ../sass/main.scss */
+.show-on-map::before {
+  content: "";
+  position: absolute;
+  border-left: 1em solid rgba(37, 116, 169, 0);
+  /* rgba border-color */
+  border-right: 1em solid rgba(37, 116, 169, 0);
+  /* rgba border-color */
+  border-bottom: 1em solid #2574A9;
+  /* border-color */
+  left: 10em;
+  top: -1em;
+}
+
+/* line 120, ../sass/main.scss */
+.show-on-map::after {
+  content: "";
+  position: absolute;
+  border-left: 1em solid rgba(255, 255, 199, 0);
+  /* rgba background-color */
+  border-right: 1em solid rgba(255, 255, 199, 0);
+  /* rgba background-color */
+  border-bottom: 1em solid #FFFFC7;
+  /* background-color */
+  left: 10em;
+  top: -0.8em;
+}
+
+/* line 130, ../sass/main.scss */
+.our-route {
+  display: none;
+  background: #FFFFC7;
+  border: 0.13em solid #2574A9;
+  /* border-color */
+  border-radius: 4px;
+  box-shadow: 10px 10px 20px #BFBFA3;
+  color: #110000;
+  /* Positioning */
+  position: absolute;
+  margin-left: 15em;
+  /* Используем свойство "margin" для определения положения блока */
+  margin-top: 0.8em;
+  z-index: 1000;
+}
+/* line 142, ../sass/main.scss */
+.our-route h4 {
+  margin: 1em 1em;
+}
+/* line 145, ../sass/main.scss */
+.our-route span {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+  color: #2574A9;
+  font-size: 0.7em;
+  border-bottom: 0.1em dotted #2574A9;
+}
+/* line 154, ../sass/main.scss */
+.our-route span:hover {
+  color: #cc5200;
+  border-bottom-color: #cc5200;
+}
+/* line 158, ../sass/main.scss */
+.our-route div {
+  float: left;
+  margin: 1em 1em 1em 1em;
+}
+/* line 162, ../sass/main.scss */
+.our-route button {
+  cursor: pointer;
+  float: left;
+  margin: 1em 1em 1em 1em;
+}
+/* line 167, ../sass/main.scss */
+.our-route button:last-child {
+  float: right;
+}
+
+/* Top arrow for ".our-route" */
+/* line 173, ../sass/main.scss */
+.our-route::before {
+  content: "";
+  position: absolute;
+  border-left: 1em solid rgba(37, 116, 169, 0);
+  /* rgba border-color */
+  border-right: 1em solid rgba(37, 116, 169, 0);
+  /* rgba border-color */
+  border-bottom: 1em solid #2574A9;
+  /* border-color */
+  left: 25em;
+  top: -1em;
+}
+
+/* line 183, ../sass/main.scss */
+.our-route::after {
+  content: "";
+  position: absolute;
+  border-left: 1em solid rgba(255, 255, 199, 0);
+  /* rgba background-color */
+  border-right: 1em solid rgba(255, 255, 199, 0);
+  /* rgba background-color */
+  border-bottom: 1em solid #FFFFC7;
+  /* background-color */
+  left: 25em;
+  top: -0.8em;
+}
+
+/* line 193, ../sass/main.scss */
+.sidebar {
+  background: #E9E3CA;
+  display: none;
+  height: 90.9vh;
+}
+/* line 197, ../sass/main.scss */
+.sidebar span {
+  position: absolute;
+  top: 5em;
+  right: 1em;
+  cursor: pointer;
+  color: #2574A9;
+  font-size: 0.7em;
+  border-bottom: 0.1em dotted #2574A9;
+}
+/* line 206, ../sass/main.scss */
+.sidebar span:hover {
+  color: #cc5200;
+  border-bottom-color: #cc5200;
+}
+/* line 210, ../sass/main.scss */
+.sidebar p, .sidebar li {
+  padding: .5em .5em .5em 2em;
+}

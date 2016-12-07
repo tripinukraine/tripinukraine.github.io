@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Цветовая палитра</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/colorpalette.css">
+</head>
+<body>
+
+	<figure>
+		<div class="base-color"></div>
+		<figcaption>Базовый цвет</figcaption>
+		<a href="#base-color">Посмотреть пример</a>
+	</figure>
+
+	<figure>
+		<div class="link-color"></div>
+		<figcaption>Цвет ссылки</figcaption>
+		<a href="#link-color">Посмотреть пример</a>
+	</figure>
+
+	<figure>
+		<div class="hover-color"></div>
+		<figcaption>Цвет при наведении :hover</figcaption>
+		<a href="#hover-color">Посмотреть пример</a>
+	</figure>
+
+	<figure>
+		<div class="visited-color"></div>
+		<figcaption>Цвет посещенных ссылок</figcaption>
+		<a href="#visited-color">Посмотреть пример</a>
+	</figure>
+
+	<figure>
+		<div class="text-color"></div>
+		<figcaption>Цвет текста</figcaption>
+		<a href="#text-color">Посмотреть пример</a>
+	</figure>
+
+	<figure>
+		<div class="success-color"></div>
+		<figcaption>Цвет "действие успешно"</figcaption>
+		<a href="#success-color">Посмотреть пример</a>
+	</figure>
+
+	<figure>
+		<div class="fail-color"></div>
+		<figcaption>Цвет "действие потерпело неудачу"</figcaption>
+		<a href="#fail-color">Посмотреть пример</a>
+	</figure>
+
+	<figure>
+		<div class="warning-color"></div>
+		<figcaption>Цвет "Внимание!"</figcaption>
+		<a href="#warning-color">Посмотреть пример</a>
+	</figure>
+
+	<figure>
+		<div class="notice-color"></div>
+		<figcaption>Цвет уведомлений</figcaption>
+		<a href="#notice-color">Посмотреть пример</a>
+	</figure>
+
+	<figure>
+		<div class="help-popup-color"></div>
+		<figcaption>Цвет "помощь/подсказка"</figcaption>
+		<a href="#help-popup-color">Посмотреть пример</a>
+	</figure>
+
+	<figure>
+		<div class="users-interface-blocks"></div>
+		<figcaption>Цвета блоков пользовательского интерфейса</figcaption>
+		<a href="#users-interface-blocks">Посмотреть пример</a>
+	</figure>
+
+	<figure>
+		<div class="all-color"></div>
+		<figcaption>Все цвета палитры</figcaption>
+		<a href="#all-color">Посмотреть пример</a>
+	</figure>
+
+	<!-- Modal windows -->
+
+	<a href="#x" id="base-color" class="overlay"></a>
+	<div class="popup">
+		<h5 class="base">Пример использования базового цвета</h5>
+		<div class="example-container">
+			<div class="header base-color"></div>
+			<iframe width="558" height="226" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=26.279296875000004%2C43.992814500489914%2C49.72412109375001%2C53.067626642387374&amp;layer=mapnik"></iframe>
+			<div class="footer base-color"></div>
+		</div>
+		<a href="#close" class="close" title="Закрыть"></a>
+	</div>
+
+	<a href="#x" id="link-color" class="overlay"></a>
+	<div class="popup">
+		<h5 class="link">Примеы отображения ссылок</h5>
+		<div class="example-container">
+
+			<div class="base-color">
+				<p>Здесь<a href="#link-color">присутствует ссылка</a></p>
+			</div>
+
+			<div class="notice-color">
+				<p>Здесь<a href="#link-color">присутствует ссылка</a></p>
+			</div>
+
+			<div class="help-popup-color">
+				<p>Здесь<a href="#link-color">присутствует ссылка</a></p>
+			</div>
+
+			<div class="success-color">
+				<p>Здесь<a href="#link-color">присутствует ссылка</a></p>
+			</div>
+
+		</div>
+		<a href="#close" class="close" title="Закрыть"></a>
+	</div>
+
+	<a href="#x" id="all-color" class="overlay"></a>
+	<div class="popup">
+		<h5 class="base">Все использованные цвета палитры с их назначением</h5>
+		<div class="example-container">
+
+			<div class="base-color"><span>Базовый цвет</span></div>
+			<div class="link-color inline"><span>Цвет ссылок</span></div><!--
+			--><div class="link-hover inline"><span>Hover</span></div><!--
+			--><div class="link-visited inline"><span>Visited</span></div>
+			<div class="text-color"><span>Цвет текста</span></div>
+			<div class="success-color"><span>Цвет "действие успешно"</span></div>
+			<div class="fail-color"><span>Цвет "действие потерпело неудачу"</span></div>
+			<div class="warning-color"><span>Цвет "Внимание!"</span></div>
+			<div class="notice-color"><span>Цвет уведомлений</span></div>
+			<div class="help-popup-color"><span>Цвет "помощь/подсказка"</span></div>
+			<div class="users-interface-blocks inline"><span>Цвета блоков пользовательского интерфейса</span></div><!--
+			--><div class="users-interface-blocks inline"><span>Цвета блоков пользовательского интерфейса</span></div>
+			
+		</div>
+		<a href="#close" class="close" title="Закрыть"></a>
+	</div>
+
+</body>
+</html>
