@@ -216,3 +216,15 @@ nav {
 // 	height: 300px;
 // }
 
+// Вспомогательная ссылка. Из окончательного проекта эту ссылку УБРАТЬ!
+a.explanations {
+	position: absolute;
+	top: 0.5em;
+	right: 0.5em;
+	color: #3455DB;
+	border-bottom: 0.1em dashed;
+}
+
+a.explanations:hover {
+	color: $visited-color;
+}

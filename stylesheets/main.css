@@ -867,3 +867,17 @@ nav button {
 .sidebar p, .sidebar li {
   padding: .5em .5em .5em 2em;
 }
+
+/* line 220, ../sass/main.scss */
+a.explanations {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  color: #3455DB;
+  border-bottom: 0.1em dashed;
+}
+
+/* line 228, ../sass/main.scss */
+a.explanations:hover {
+  color: #cc5200;
+}
