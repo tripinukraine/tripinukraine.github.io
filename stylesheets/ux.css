@@ -1,8 +1,132 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 }
 
+h1 {
+	font-size: 2em;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+figure {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #999933;
+}
+
+figcaption {
+	font-size: 0.8em;
+	color: #999;
+	margin-left: 25%;
+}
+
+.clearfix::before,
+.clearfix::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
 .screen{
+	position: relative;
 	width: 50%;
-	border: 1px solid #000;	
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #000;
+	background: #999966;
+}
+
+.header {
+	background: #ffcc00;
+}
+
+.header-menu li {
+	float: left;
+	margin-left: 70px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* .content {
+	position: relative;
+} */
+
+.content span {
+	position: absolute;
+	top: 45%;
+	left: 45%;
+}
+
+.show-on-map,
+.make-route {
+	border: 1px dashed #3333CC;
+	padding: 5px 5px;
+}
+.show-on-map a,
+.make-route a {
+	color: #FF3300;
+	font-weight: bold;
+}
+
+/* popups */
+
+.popup {
+	position: absolute;
+	background: #33CCCC;
+	padding: 5px 5px;
+}
+
+.popup::before {
+	content: "";
+  position: absolute;
+  border-left: 10px solid rgba(113, 101, 58, 0);
+  border-right: 10px solid rgba(113, 101, 58, 0);
+  border-bottom: 10px solid #33CCCC;
+  left: 100px;
+  top: -10px;
+}
+
+.popup::after {
+	content: "";
+  position: absolute;
+  border-left: 10px solid rgba(255, 241, 190, 0);
+  border-right: 10px solid rgba(255, 241, 190, 0);
+  border-bottom: 10px solid #33CCCC;
+  left: 100px;
+  top: -9px;
+}
+
+.popup-on-map {
+	top: 50px;
+	left: 30px;
+}
+
+.popup-make-route {
+	top: 50px;
+	left: 250px;
+}
+
+.map-marker-blue,
+.map-marker-green {
+	position: absolute;
+}
+
+.map-marker-blue {
+	top: 120px;
+	right: 250px;
+}
+
+.map-marker-green {
+	top: 90px;
+	left: 300px;
 }
