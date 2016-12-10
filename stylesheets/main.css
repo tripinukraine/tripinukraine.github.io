@@ -625,54 +625,68 @@ body,
   font-family: 'Azoft sans';
 }
 
-/* line 17, ../sass/main.scss */
+/* line 18, ../sass/main.scss */
+#map {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 24, ../sass/main.scss */
+.bg-one {
+  width: 100%;
+  background: url(../img/bg-picture-1.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* line 30, ../sass/main.scss */
 body {
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* line 23, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
 h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
 }
 
-/* line 28, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
 a {
   color: #000033;
   text-decoration: none;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 a:hover {
   color: #262699;
 }
 
-/* line 38, ../sass/main.scss */
+/* line 51, ../sass/main.scss */
 ul, ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 43, ../sass/main.scss */
+/* line 56, ../sass/main.scss */
 li {
   list-style: none;
 }
 
-/* line 47, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
 .site-header,
 .site-footer {
   background: #ffcc00;
   position: relative;
 }
 
-/* line 53, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 .site-footer {
   clear: both;
 }
 
-/* line 57, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 .logo {
   float: left;
   margin-top: 1em;
@@ -680,11 +694,11 @@ li {
 }
 
 /* Main menu in header */
-/* line 64, ../sass/main.scss */
+/* line 77, ../sass/main.scss */
 nav {
   float: left;
 }
-/* line 66, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 nav button {
   float: left;
   margin-top: 1em;
@@ -692,7 +706,7 @@ nav button {
   margin-left: 5em;
 }
 
-/* line 74, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 .show-on-map {
   display: none;
   background: #FFFFC7;
@@ -708,11 +722,11 @@ nav button {
   margin-top: 0.8em;
   z-index: 1000;
 }
-/* line 87, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 .show-on-map h4 {
   margin: 1em 1em;
 }
-/* line 90, ../sass/main.scss */
+/* line 103, ../sass/main.scss */
 .show-on-map span {
   position: absolute;
   top: 1em;
@@ -722,19 +736,19 @@ nav button {
   font-size: 0.7em;
   border-bottom: 0.1em dotted #2574A9;
 }
-/* line 99, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 .show-on-map span:hover {
   color: #cc5200;
   border-bottom-color: #cc5200;
 }
-/* line 103, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 .show-on-map li {
   float: left;
   padding: 1em 1em;
 }
 
 /* Top arrow for ".show-on-map" */
-/* line 110, ../sass/main.scss */
+/* line 123, ../sass/main.scss */
 .show-on-map::before {
   content: "";
   position: absolute;
@@ -748,7 +762,7 @@ nav button {
   top: -1em;
 }
 
-/* line 120, ../sass/main.scss */
+/* line 133, ../sass/main.scss */
 .show-on-map::after {
   content: "";
   position: absolute;
@@ -762,7 +776,7 @@ nav button {
   top: -0.8em;
 }
 
-/* line 130, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 .our-route {
   display: none;
   background: #FFFFC7;
@@ -778,11 +792,11 @@ nav button {
   margin-top: 0.8em;
   z-index: 1000;
 }
-/* line 142, ../sass/main.scss */
+/* line 155, ../sass/main.scss */
 .our-route h4 {
   margin: 1em 1em;
 }
-/* line 145, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 .our-route span {
   position: absolute;
   top: 1em;
@@ -792,29 +806,29 @@ nav button {
   font-size: 0.7em;
   border-bottom: 0.1em dotted #2574A9;
 }
-/* line 154, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .our-route span:hover {
   color: #cc5200;
   border-bottom-color: #cc5200;
 }
-/* line 158, ../sass/main.scss */
+/* line 171, ../sass/main.scss */
 .our-route div {
   float: left;
   margin: 1em 1em 1em 1em;
 }
-/* line 162, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .our-route button {
   cursor: pointer;
   float: left;
   margin: 1em 1em 1em 1em;
 }
-/* line 167, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 .our-route button:last-child {
   float: right;
 }
 
 /* Top arrow for ".our-route" */
-/* line 173, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 .our-route::before {
   content: "";
   position: absolute;
@@ -828,7 +842,7 @@ nav button {
   top: -1em;
 }
 
-/* line 183, ../sass/main.scss */
+/* line 196, ../sass/main.scss */
 .our-route::after {
   content: "";
   position: absolute;
@@ -842,13 +856,13 @@ nav button {
   top: -0.8em;
 }
 
-/* line 193, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 .sidebar {
   background: #E9E3CA;
   display: none;
   height: 90.9vh;
 }
-/* line 197, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 .sidebar span {
   position: absolute;
   top: 5em;
@@ -858,17 +872,17 @@ nav button {
   font-size: 0.7em;
   border-bottom: 0.1em dotted #2574A9;
 }
-/* line 206, ../sass/main.scss */
+/* line 219, ../sass/main.scss */
 .sidebar span:hover {
   color: #cc5200;
   border-bottom-color: #cc5200;
 }
-/* line 210, ../sass/main.scss */
+/* line 223, ../sass/main.scss */
 .sidebar p, .sidebar li {
   padding: .5em .5em .5em 2em;
 }
 
-/* line 220, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 a.explanations {
   position: absolute;
   top: 0.5em;
@@ -877,7 +891,7 @@ a.explanations {
   border-bottom: 0.1em dashed;
 }
 
-/* line 228, ../sass/main.scss */
+/* line 241, ../sass/main.scss */
 a.explanations:hover {
   color: #cc5200;
 }

@@ -1,6 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
+	line-height: 1.2;
 }
 
 h1 {
@@ -10,23 +11,32 @@ h1 {
 
 h2 {
 	font-size: 1.5em;
+	margin-bottom: 10px;
+	margin-left: 5%;
 }
 
 h3 {
 	font-size: 1.3em;
+	margin-bottom: 5px;
+}
+
+p {
+	margin-bottom: 15px;
 }
 
 figure {
 	margin-left: 10%;
 	margin-right: 10%;
-	margin-bottom: 30px;
-	border-bottom: 1px solid #999933;
+	margin-bottom: 70px;
+	border-bottom: 2px solid #FF6600;
 }
 
 figcaption {
 	font-size: 0.8em;
 	color: #999;
-	margin-left: 25%;
+	margin-left: 26%;
+	margin-top: 5px;
+	margin-bottom: 15px;
 }
 
 .clearfix::before,
@@ -123,10 +133,10 @@ figcaption {
 
 .map-marker-blue {
 	top: 120px;
-	right: 250px;
+	left: 300px;
 }
 
 .map-marker-green {
 	top: 90px;
-	left: 300px;
+	left: 330px;
 }
