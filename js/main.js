@@ -21,7 +21,7 @@ $( document ).ready(function() {
 	});
 
 	// show sidebar
-	$('.route-details').click(function () {
+	$('.route-details, .add-information').click(function () {
 		$('.sidebar').show('slow');
 	});
 
@@ -33,9 +33,7 @@ $( document ).ready(function() {
 	});
 
 	//pop-up on map link
-	$('.leaflet-popup-content a').click(function(e) {
-		$('.sidebar').show('slow');
-	});
+	
 
 	// alert('It\'s work!');
 });

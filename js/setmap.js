@@ -24,3 +24,23 @@ function onMapClick(e) {
 }
 
 mymap.on('click', onMapClick);
+
+// Custom icons
+var nishtyakIcon = L.icon({
+	iconUrl: './img/map-marker-green.png',
+	// iconSize: [35, 98],
+	// iconAnchor: [22, 94],
+	popupAnchor: [-1, -1]
+});
+
+// Custom popup
+var nishtyakPopup = '<h5>Tichka cafe</h5><img src="img/kloomba.png" alt="kloomba-image"><p>Кафе "Тічка" засновано хій знає в якому році. Розташоване на перехресті головних доріг Харкова.</p><br /><a>Подробнее</a> ' +
+	'<a>Add to route</a> ' + '<a href="#" class="add-information">Add information</a>';
+
+var customPopupOptions = {
+	'className': 'custom'
+}
+
+L.marker([49.98315, 36.23913], {icon: nishtyakIcon}).bindPopup(nishtyakPopup, customPopupOptions).addTo(mymap);
+
+

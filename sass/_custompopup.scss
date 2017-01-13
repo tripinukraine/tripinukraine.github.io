@@ -1,0 +1,8 @@
+.custom .leaflet-popup-tip,
+.custom .leaflet-popup-content-wrapper {
+	border-radius: 2px;
+}
+
+.custom .leaflet-popup-content-wrapper a{
+	color: $link-color;
+}

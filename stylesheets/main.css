@@ -616,7 +616,52 @@ template {
   border-bottom: 0.3em solid #000060;
 }
 
-/* line 8, ../sass/main.scss */
+/* line 3, ../sass/_popup.scss */
+.popup {
+  border: 0.1em solid #000;
+  width: 20%;
+  margin: 5em 5em;
+}
+
+/* line 9, ../sass/_popup.scss */
+.popup img {
+  float: left;
+  width: 4em;
+  margin: 0.3em 0.3em;
+}
+
+/* line 15, ../sass/_popup.scss */
+.popup h5 {
+  float: right;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+/* line 21, ../sass/_popup.scss */
+.popup p {
+  float: right;
+  font-size: 0.7em;
+}
+
+/* line 26, ../sass/_popup.scss */
+button.more-details,
+button.add-to-route,
+button.choose-housing {
+  background: none;
+}
+
+/* line 1, ../sass/_custompopup.scss */
+.custom .leaflet-popup-tip,
+.custom .leaflet-popup-content-wrapper {
+  border-radius: 2px;
+}
+
+/* line 6, ../sass/_custompopup.scss */
+.custom .leaflet-popup-content-wrapper a {
+  color: #000033;
+}
+
+/* line 10, ../sass/main.scss */
 html,
 body,
 #map {
@@ -625,68 +670,54 @@ body,
   font-family: 'Azoft sans';
 }
 
-/* line 18, ../sass/main.scss */
-#map {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 24, ../sass/main.scss */
-.bg-one {
-  width: 100%;
-  background: url(../img/bg-picture-1.jpg) no-repeat;
-  background-size: cover;
-}
-
-/* line 30, ../sass/main.scss */
+/* line 19, ../sass/main.scss */
 body {
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* line 36, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
 }
 
-/* line 41, ../sass/main.scss */
+/* line 30, ../sass/main.scss */
 a {
   color: #000033;
   text-decoration: none;
 }
 
-/* line 47, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
 a:hover {
   color: #262699;
 }
 
-/* line 51, ../sass/main.scss */
+/* line 40, ../sass/main.scss */
 ul, ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 56, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 li {
   list-style: none;
 }
 
-/* line 60, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 .site-header,
 .site-footer {
   background: #ffcc00;
   position: relative;
 }
 
-/* line 66, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 .site-footer {
   clear: both;
 }
 
-/* line 70, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 .logo {
   float: left;
   margin-top: 1em;
@@ -694,11 +725,11 @@ li {
 }
 
 /* Main menu in header */
-/* line 77, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 nav {
   float: left;
 }
-/* line 79, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 nav button {
   float: left;
   margin-top: 1em;
@@ -706,7 +737,7 @@ nav button {
   margin-left: 5em;
 }
 
-/* line 87, ../sass/main.scss */
+/* line 76, ../sass/main.scss */
 .show-on-map {
   display: none;
   background: #FFFFC7;
@@ -722,11 +753,11 @@ nav button {
   margin-top: 0.8em;
   z-index: 1000;
 }
-/* line 100, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 .show-on-map h4 {
   margin: 1em 1em;
 }
-/* line 103, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 .show-on-map span {
   position: absolute;
   top: 1em;
@@ -736,19 +767,19 @@ nav button {
   font-size: 0.7em;
   border-bottom: 0.1em dotted #2574A9;
 }
-/* line 112, ../sass/main.scss */
+/* line 101, ../sass/main.scss */
 .show-on-map span:hover {
   color: #cc5200;
   border-bottom-color: #cc5200;
 }
-/* line 116, ../sass/main.scss */
+/* line 105, ../sass/main.scss */
 .show-on-map li {
   float: left;
   padding: 1em 1em;
 }
 
 /* Top arrow for ".show-on-map" */
-/* line 123, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 .show-on-map::before {
   content: "";
   position: absolute;
@@ -762,7 +793,7 @@ nav button {
   top: -1em;
 }
 
-/* line 133, ../sass/main.scss */
+/* line 122, ../sass/main.scss */
 .show-on-map::after {
   content: "";
   position: absolute;
@@ -776,7 +807,7 @@ nav button {
   top: -0.8em;
 }
 
-/* line 143, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 .our-route {
   display: none;
   background: #FFFFC7;
@@ -792,11 +823,11 @@ nav button {
   margin-top: 0.8em;
   z-index: 1000;
 }
-/* line 155, ../sass/main.scss */
+/* line 144, ../sass/main.scss */
 .our-route h4 {
   margin: 1em 1em;
 }
-/* line 158, ../sass/main.scss */
+/* line 147, ../sass/main.scss */
 .our-route span {
   position: absolute;
   top: 1em;
@@ -806,29 +837,29 @@ nav button {
   font-size: 0.7em;
   border-bottom: 0.1em dotted #2574A9;
 }
-/* line 167, ../sass/main.scss */
+/* line 156, ../sass/main.scss */
 .our-route span:hover {
   color: #cc5200;
   border-bottom-color: #cc5200;
 }
-/* line 171, ../sass/main.scss */
+/* line 160, ../sass/main.scss */
 .our-route div {
   float: left;
   margin: 1em 1em 1em 1em;
 }
-/* line 175, ../sass/main.scss */
+/* line 164, ../sass/main.scss */
 .our-route button {
   cursor: pointer;
   float: left;
   margin: 1em 1em 1em 1em;
 }
-/* line 180, ../sass/main.scss */
+/* line 169, ../sass/main.scss */
 .our-route button:last-child {
   float: right;
 }
 
 /* Top arrow for ".our-route" */
-/* line 186, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .our-route::before {
   content: "";
   position: absolute;
@@ -842,7 +873,7 @@ nav button {
   top: -1em;
 }
 
-/* line 196, ../sass/main.scss */
+/* line 185, ../sass/main.scss */
 .our-route::after {
   content: "";
   position: absolute;
@@ -856,13 +887,13 @@ nav button {
   top: -0.8em;
 }
 
-/* line 206, ../sass/main.scss */
+/* line 195, ../sass/main.scss */
 .sidebar {
   background: #E9E3CA;
   display: none;
   height: 90.9vh;
 }
-/* line 210, ../sass/main.scss */
+/* line 199, ../sass/main.scss */
 .sidebar span {
   position: absolute;
   top: 5em;
@@ -872,17 +903,17 @@ nav button {
   font-size: 0.7em;
   border-bottom: 0.1em dotted #2574A9;
 }
-/* line 219, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 .sidebar span:hover {
   color: #cc5200;
   border-bottom-color: #cc5200;
 }
-/* line 223, ../sass/main.scss */
+/* line 212, ../sass/main.scss */
 .sidebar p, .sidebar li {
   padding: .5em .5em .5em 2em;
 }
 
-/* line 233, ../sass/main.scss */
+/* line 222, ../sass/main.scss */
 a.explanations {
   position: absolute;
   top: 0.5em;
@@ -891,7 +922,7 @@ a.explanations {
   border-bottom: 0.1em dashed;
 }
 
-/* line 241, ../sass/main.scss */
+/* line 230, ../sass/main.scss */
 a.explanations:hover {
   color: #cc5200;
 }
